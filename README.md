@@ -114,11 +114,11 @@ Follow these steps to set up the application on your local machine:
     ```bash
     npm install
     # OR yarn install
-    # OR pnpm install
+    # OR npm install
     ```
 
     **Run the frontEnd application:**
-    If everything set up, you can run the application on port 3000 bt default:
+    If everything set up, you can run the application on port 3000 by default:
 
     ```bash
     npm run dev
