@@ -74,15 +74,16 @@ Follow these steps to set up the application on your local machine:
       - `SECRET_KEY=[a_random_string_for_security]`
       - `DATABASE_URL=[your_database_connection_string]` (e.g., `sqlite:///site.db` for SQLite)
       - [Add any other specific environment variables required by the backEnd]
-    - Below is a template for .env
 
-    ```
+    **Below is a template for .env:**
+
+    ```bash
     # Flask Secret Key should be a strong random string
     SECRET_KEY='your_flask_secret_key_here'
-    # Get GOOGLE_CLIENT_ID from ([Google](https://developers.google.com/identity/gsi/web/guides/get-google-api-clientid#get_your_google_api_client_id))
+    # Get GOOGLE_CLIENT_ID from [https://developers.google.com/identity/gsi/web/guides/get-google-api-clientid#get_your_google_api_client_id]
     GOOGLE_CLIENT_ID="your_google_client_id"
     GOOGLE_CLIENT_SECRET="your_google_client_secret"
-    # Get FACEBOOK_CLIENT_ID from ([Facebook](https://composio.dev/auth/facebook))
+    # Get FACEBOOK_CLIENT_ID from [https://composio.dev/auth/facebook]
     FACEBOOK_CLIENT_ID="your_facebook_client_id"
     FACEBOOK_CLIENT_SECRET="your_facebook_client_secret"
     UPLOAD_FOLDER = 'uploads/profile_pictures'
