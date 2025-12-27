@@ -1,0 +1,125 @@
+# Taste Tailor
+
+Taste Tailor is a web-based application aimed at providing quick, personalized meal recommendations for tech-savvy users (primarily millennials and Gen Z). The system employs a content-based filtering algorithm to suggest menu items tailored to individual taste profiles.
+
+## Project Stack
+
+- **Frontend:** Next.js (React Framework), Tailwind CSS (Styling)
+- **Backend:** Flask (Python Web Framework), Flask-SQLAlchemy (ORM)
+- **Database:** [Specify the type, e.g., SQLite, PostgreSQL, MySQL]
+
+## Features
+
+- Authentication
+- Profile Management
+- Menu Browsing
+- Recommendation
+- Ordering Simulation
+
+## Prerequisites
+
+Make sure you have the following installed:
+
+- Git ([Link to download](https://git-scm.com/downloads))
+- Node.js (vXX.X or later) ([Link to download](https://nodejs.org/))
+- Python (vX.X or later) ([Link to download](https://www.python.org/downloads/))
+
+## Setup
+
+Follow these steps to set up the application on your local machine:
+
+1.  **Extract the zip file.**
+    Unzip the downloaded application file to a directory on your computer.
+
+2.  **Backend Setup:**
+
+    Open your terminal or command prompt.
+    Navigate into the `backEnd` directory of the extracted project:
+
+    ```bash
+    cd backEnd
+    ```
+
+    **Create and Activate a Python Virtual Environment:**
+    It's best practice to use a virtual environment to manage backend dependencies separately.
+
+    ```bash
+    # On macOS and Linux
+    python3 -m venv venv
+    source venv/bin/activate
+    ```
+
+    ```bash
+    # On Windows
+    python -m venv venv
+    .\venv\Scripts\activate
+    ```
+
+    _(Ensure `(venv)` appears in your terminal prompt)_
+
+    Install dependencies:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+    **Configure Backend Environment Variables:**
+    The backend requires configuration via environment variables.
+
+    - Find the file named `.env.example` in the `backEnd` directory.
+    - Copy this file and rename the copy to `.env`.
+
+    ```bash
+    # On macOS and Linux
+    cp .env.example .env
+    ```
+
+    ```bash
+    # On Windows
+    copy .env.example .env
+    ```
+
+    Edit the `.env` file with your secret key, google and facebook client id/key, etc.
+
+    - Open the new `.env` file in a text editor and fill in the required values. Crucial variables will likely include:
+      - `SECRET_KEY=[a_random_string_for_security]`
+      - `DATABASE_URL=[your_database_connection_string]` (e.g., `sqlite:///site.db` for SQLite)
+      - [Add any other specific environment variables required by the backEnd]
+
+    **Run the backEnd application:**
+    If everything set up, you can run the application on port 5000 bt default:
+
+    ```bash
+    python3 app.py
+    ```
+
+3.  **Frontend Setup:**
+
+    Open a **new terminal or command prompt**.
+
+    Open a **new terminal or command prompt window**.
+    Navigate into the `frontEnd` directory of the extracted project:
+
+    ```bash
+    cd frontEnd
+    ```
+
+    ```bash
+    cd taste_tailor
+    ```
+
+    **Install Frontend Dependencies:**
+    Install the required Node.js packages using npm (or yarn/pnpm if that's what your project uses - check `package.json` or project documentation):
+
+    ```bash
+    npm install
+    # OR yarn install
+    # OR pnpm install
+    ```
+
+    **Run the frontEnd application:**
+    If everything set up, you can run the application on port 3000 bt default:
+
+    ```bash
+    npm run dev
+    ```
