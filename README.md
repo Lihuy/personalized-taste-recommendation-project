@@ -74,10 +74,10 @@ Follow these steps to set up the application on your local machine:
       - `SECRET_KEY=[a_random_string_for_security]`
       - `DATABASE_URL=[your_database_connection_string]` (e.g., `sqlite:///site.db` for SQLite)
       - [Add any other specific environment variables required by the backEnd]
+    - Below is a template for .env
 
-    ```bash
-    # This is a template for .env
-    # Flask Secret Key: Used for securing sessions and other security-related functions.
+    ```
+    # Flask Secret Key should be a strong random string
     SECRET_KEY='your_flask_secret_key_here'
     # Get GOOGLE_CLIENT_ID from ([Google](https://developers.google.com/identity/gsi/web/guides/get-google-api-clientid#get_your_google_api_client_id))
     GOOGLE_CLIENT_ID="your_google_client_id"
