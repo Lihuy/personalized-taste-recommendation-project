@@ -75,8 +75,8 @@ Follow these steps to set up the application on your local machine:
       - `DATABASE_URL=[your_database_connection_string]` (e.g., `sqlite:///site.db` for SQLite)
       - [Add any other specific environment variables required by the backEnd]
 
-    ```
-    # This is a template
+    ```bash
+    # This is a template for .env
     # Flask Secret Key: Used for securing sessions and other security-related functions.
     SECRET_KEY='your_flask_secret_key_here'
     # Get GOOGLE_CLIENT_ID from ([Google](https://developers.google.com/identity/gsi/web/guides/get-google-api-clientid#get_your_google_api_client_id))
@@ -112,7 +112,7 @@ Follow these steps to set up the application on your local machine:
     ```
 
     **Install Frontend Dependencies:**
-    Install the required Node.js packages using npm (or yarn/pnpm if that's what your project uses - check `package.json` or project documentation):
+    Install the required Node.js packages using npm (or yarn/pnpm if that's what your project uses — check `package.json` or project documentation):
 
     ```bash
     npm install
