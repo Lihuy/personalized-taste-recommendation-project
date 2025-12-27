@@ -1,0 +1,61 @@
+@import 'tailwindcss';
+
+:root {
+    --primary-color: #CB6CE6;
+    --secondary-color: #c2596a;
+    --secondary-color-hover: #d9705d;
+    --third-color: #acfa70;
+    --third-color-hover: #b2f7a1;
+    --fourth-color: #292F56;
+    --fourth-color-hover: #1e4572;
+    --text-tiny: 0.625rem; 
+    --copyright-color: #e5e8e8;
+}
+
+.my-tiny-text {
+    font-size: var(--text-tiny);
+}
+  
+.my-main-element {
+    color: var(--primary-color);
+}
+
+.my-secondary-element {
+    color: var(--secondary-color);
+}
+
+.my-third-element {
+    color: var(--third-color);
+}
+
+.my-copyright-element {
+    color: var(--copyright-color);
+}
+
+.my-section-element {
+    background-color: var(--primary-color);
+}
+
+.my-login-element {
+    background-color: var(--third-color);
+}
+
+.my-login-element-hover {
+    background-color: var(--third-color-hover);
+}
+
+.my-signup-element {
+    background-color: var(--fourth-color);
+}
+
+.my-signup-element-hover {
+    background-color: var(--fourth-color-hover);
+}
+
+.my-logout-element {
+    background-color: var(--secondary-color);
+}
+
+.my-logout-element-hover {
+    background-color: var(--secondary-color-hover);
+} 
