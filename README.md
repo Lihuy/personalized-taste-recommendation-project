@@ -66,18 +66,7 @@ Follow these steps to set up the application on your local machine:
     **Configure Backend Environment Variables:**
     The backend requires configuration via environment variables.
 
-    - Find the file named `.env.example` in the `backEnd` directory.
-    - Copy this file and rename the copy to `.env`.
-
-    ```bash
-    # On macOS and Linux
-    cp .env.example .env
-    ```
-
-    ```bash
-    # On Windows
-    copy .env.example .env
-    ```
+    - Create a new file named `.env` in the `backEnd` directory.
 
     Edit the `.env` file with your secret key, google and facebook client id/key, etc.
 
@@ -85,6 +74,20 @@ Follow these steps to set up the application on your local machine:
       - `SECRET_KEY=[a_random_string_for_security]`
       - `DATABASE_URL=[your_database_connection_string]` (e.g., `sqlite:///site.db` for SQLite)
       - [Add any other specific environment variables required by the backEnd]
+
+    ```
+    # This is a template
+    # Flask Secret Key: Used for securing sessions and other security-related functions.
+    SECRET_KEY='your_flask_secret_key_here'
+    # Get GOOGLE_CLIENT_ID from ([Google](https://developers.google.com/identity/gsi/web/guides/get-google-api-clientid#get_your_google_api_client_id))
+    GOOGLE_CLIENT_ID="your_google_client_id"
+    GOOGLE_CLIENT_SECRET="your_google_client_secret"
+    # Get FACEBOOK_CLIENT_ID from ([Facebook](https://composio.dev/auth/facebook))
+    FACEBOOK_CLIENT_ID="your_facebook_client_id"
+    FACEBOOK_CLIENT_SECRET="your_facebook_client_secret"
+    UPLOAD_FOLDER = 'uploads/profile_pictures'
+    ALLOWED_EXTENSIONS = {'png', 'jpg', 'jpeg'}
+    ```
 
     **Run the backEnd application:**
     If everything set up, you can run the application on port 5000 bt default:
